@@ -17,6 +17,7 @@ all:
 	gcc -o menu_column menu_column.c -g3 -lncurses -lmenu
 	gcc -o multi_menu multi_value_menu.c -g3 -lncurses -lmenu
 	gcc -o menu_option menu_option.c -g3 -lncurses -lmenu
+	gcc -o menu_user_pointer menu_user_pointer.c -g3 -lncurses -lmenu
 clean:
 	rm simple_printw
 	rm scanw
@@ -36,3 +37,4 @@ clean:
 	rm menu_column
 	rm multi_menu
 	rm menu_option
+	rm menu_user_pointer

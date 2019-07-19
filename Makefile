@@ -13,6 +13,10 @@ all:
 	gcc -o panel_window panel_window.c -g3 -lncurses -lpanel
 	gcc -o panel_resize panel_resize.c -g3 -lncurses -lpanel
 	gcc -o menu menu.c -g3 -lncurses -lmenu
+	gcc -o menu_window menu_window.c -g3 -lncurses -lmenu
+	gcc -o menu_column menu_column.c -g3 -lncurses -lmenu
+	gcc -o multi_menu multi_value_menu.c -g3 -lncurses -lmenu
+	gcc -o menu_option menu_option.c -g3 -lncurses -lmenu
 clean:
 	rm simple_printw
 	rm scanw
@@ -28,3 +32,7 @@ clean:
 	rm boarder
 	rm chgat
 	rm attribute
+	rm menu_window
+	rm menu_column
+	rm multi_menu
+	rm menu_option
